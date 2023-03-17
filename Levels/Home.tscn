@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://vgfp1ddy5dql"]
+
+[ext_resource type="PackedScene" uid="uid://da801t63pwvfs" path="res://Player/Player.tscn" id="1_5ddvc"]
+
+[node name="29WoodlandMount" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_5ddvc")]
+position = Vector2(320, 141)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(40, 0, 104, 8, 160, 144, 128, 248, 264, 232, 320, 248, 240, 320, 528, 352, 488, 192, 384, 168, 520, 96, 536, 16, 552, -8, 688, -16, 704, 136, 696, 456, 376, 472, -32, 448, -136, 96, -24, -48)
